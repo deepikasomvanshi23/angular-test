@@ -1,0 +1,32 @@
+Sep 13, 2020 12:25:36 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+INFO: Package starting up at Sun Sep 13 12:25:36 BST 2020
+Sep 13, 2020 12:25:47 PM org.glassfish.grizzly.nio.NIOTransport start
+INFO: Adjusting kernel thread pool to max size 9 to handle configured number of SelectorRunners
+Sep 13, 2020 12:25:47 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [127.0.0.1:59902]
+Sep 13, 2020 12:25:47 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer] Started.
+Sep 13, 2020 12:25:48 PM org.glassfish.tyrus.server.Server start
+INFO: WebSocket Registered apps: URLs all start with ws://127.0.0.1:59902
+Sep 13, 2020 12:25:48 PM org.glassfish.tyrus.server.Server start
+INFO: WebSocket server started.
+Sep 13, 2020 7:37:44 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForUpdates
+INFO: Latest version of package is installed; update check finished in 2543ms
+Sep 14, 2020 7:35:27 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForUpdates
+INFO: Latest version of package is installed; update check finished in 1517ms
+Sep 14, 2020 7:37:44 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForUpdates
+INFO: Latest version of package is installed; update check finished in 907ms
+Sep 14, 2020 9:43:38 PM org.glassfish.grizzly.http.server.NetworkListener shutdownNow
+INFO: Stopped listener bound to [127.0.0.1:59902]
+Sep 14, 2020 9:43:38 PM org.glassfish.tyrus.server.Server stop
+INFO: Websocket Server stopped.
+Sep 14, 2020 9:43:38 PM org.glassfish.grizzly.nio.NIOTransport start
+INFO: Adjusting kernel thread pool to max size 9 to handle configured number of SelectorRunners
+Sep 14, 2020 9:43:38 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [127.0.0.1:50789]
+Sep 14, 2020 9:43:38 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer-1] Started.
+Sep 14, 2020 9:43:38 PM org.glassfish.tyrus.server.Server start
+INFO: WebSocket Registered apps: URLs all start with ws://127.0.0.1:50789
+Sep 14, 2020 9:43:38 PM org.glassfish.tyrus.server.Server start
+INFO: WebSocket server started.

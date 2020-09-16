@@ -1,0 +1,64 @@
+
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-10 offset-1">
+                <p>Add a city using the input field below.</p>
+                <div class="row form-group">
+                    <div class="col-md-2">
+					    <label>City</label>
+                        <input type="text" class="form-control" id="name" #cityName>
+                    </div>
+                    <div class="col-md-2">
+						<label >Min Temperature</label>
+                        <input type="text" class="form-control" id="temp-min" readonly [value]="exampleMinimumTemperature">
+                    </div>
+                    <div class="col-md-2">
+						<label >Max Temperature</label>
+                        <input type="text" class="form-control" id="temp-max" readonly [value]="exampleMaximumTemperature">
+                    </div>
+                    <div class="col-md-2">
+						<label >Current Temperature</label>
+                        <input type="text" class="form-control" id="temp" readonly [value]="exampleTemperature">
+                    </div>
+					<div class="col-md-2">
+						<label> </label>
+                        <button class="btn btn-warning btnAdd" (click)="addCity()">Add</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Minimum Temperature</th>
+                            <th scope="col">Maximum Temperature</th>
+                            <th scope="col">Current Temperature</th>
+                            <th scope="col">Current Temperature in range?</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let city of sampleData">
+                            <td>{{ city.name }}</td>
+                            <td>{{ city.main.tempMin }}</td>
+                            <td>{{ city.main.tempMax }}</td>
+                            <td>{{ city.main.temp }}</td>
+                            <td>
+                                <div class="square" [ngStyle]="{'background-color':
+                        (city.main.temp >= city.main.tempMax || city.main.temp <= city.main.tempMin) ? 'red' : 'green'}"></div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TASK: 2. Fix Button Issues -->
+         <div class="card-footer">
+		      <a class="btn btn-warning btnRight mr-1" routerLink="/list" >Tasks</a>
+			  <a class="btn btn-danger btnRight mr-1" routerLink="/home">Home</a>
+			  <a class="btn btn-warning btnRight mr-1" routerLink="/test" >Test</a>            			  
+         </div>
+</div>
+

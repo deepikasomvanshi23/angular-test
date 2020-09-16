@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-body">
+        <h4>
+            {{ pageContent }} <button (click)="swapContent()">Change Text</button>
+        </h4>
+    </div>
+	
+    <!-- TASK: 2. Fix Button Issues --> 
+         <div class="card-footer">
+             <a class="btn btn-warning mr-1 btnRight" routerLink="/list" >Tasks</a>
+             <a class="btn btn-danger mr-1 btnRight" routerLink="/list-weather">Weather</a>
+			 <a class="btn btn-warning mr-1 btnRight" routerLink="/test" >Test</a>
+			 <a class="btn btn-warning mr-1 btnRight" routerLink="/view-weather" >View Weather</a>
+          </div>
+</div>

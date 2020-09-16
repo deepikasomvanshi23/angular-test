@@ -1,0 +1,13 @@
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+.btnRight{
+	float:right;
+}
+
+
